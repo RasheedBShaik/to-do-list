@@ -1,0 +1,133 @@
+/* Reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height setup */
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Centering the form */
+body {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px; /* for small screens */
+}
+
+/* Container box for the form */
+.container {
+  background-color: white;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Form layout */
+#signUp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each input group */
+.rectangle {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 10px 16px;
+  background-color: #f9f9f9;
+}
+
+/* SVG icon */
+.svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+/* Input styling */
+input {
+  border: none;
+  font-size: 16px;
+  flex: 1;
+  background: transparent;
+  padding: 8px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Remove focus outline */
+input:focus {
+  outline: none;
+}
+
+/* Button styling */
+button {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: #ff9090;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff6b6b;
+}
+
+#toDoList {
+  display: none;
+}
+.task > div {
+  margin: 10px;
+  font-size: 20px;
+  flex-direction: row;
+  display: flex;
+}
+.task div {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task div button {
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.task div button {
+  border: none;
+  position: relative;
+  top: -10px;
+  background: #f24e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  padding: 4px 8px;
+}
